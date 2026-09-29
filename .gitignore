@@ -1,0 +1,74 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# =========================
+# IDE / Editor
+# =========================
+.vscode/
+.idea/
+*.iml
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Environment / Secrets
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# DNSHawk generated data
+# =========================
+
+# Raw packet captures
+data/raw/*.pcap
+data/raw/*.pcapng
+data/raw/*.cap
+
+# Processed/intermediate data
+data/processed/*
+
+# Generated feature datasets
+data/features/*
+
+# =========================
+# Trained ML models
+# =========================
+models/*
+
+# =========================
+# Generated outputs
+# =========================
+output/*
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Temporary files
+# =========================
+*.tmp
+*.temp
