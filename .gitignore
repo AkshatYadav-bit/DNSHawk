@@ -55,7 +55,7 @@ data/features/*
 # =========================
 # Trained ML models
 # =========================
-models/*
+# models/*
 
 # =========================
 # Generated outputs
