@@ -1,0 +1,19 @@
+$ORIGIN lab.test.
+$TTL 3600
+
+@ IN SOA ns.lab.test. admin.lab.test. (
+    2026101301 ; Serial
+    3600     ; Refresh
+    600      ; Retry
+    86400    ; Expire
+    3600     ; Negative cache TTL
+)
+
+@  IN NS ns.lab.test.
+ns IN A  192.168.111.1
+
+web      IN A    192.168.111.10
+mail     IN A    192.168.111.11
+api      IN A    192.168.111.12
+db       IN A    192.168.111.13
+files    IN A    192.168.111.14

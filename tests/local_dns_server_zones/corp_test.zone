@@ -1,0 +1,19 @@
+$ORIGIN corp.test.
+$TTL 3600
+
+@ IN SOA ns.corp.test. admin.corp.test. (
+    2026101302 ; Serial
+    3600     ; Refresh
+    600      ; Retry
+    86400    ; Expire
+    3600     ; Negative cache TTL
+)
+
+@  IN NS ns.corp.test.
+ns IN A  192.168.111.1
+
+portal   IN A    192.168.111.15
+intranet IN A    192.168.111.16
+wiki     IN A    192.168.111.17
+git      IN A    192.168.111.18
+monitor  IN A    192.168.111.19

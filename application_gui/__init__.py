@@ -1,0 +1,1 @@
+"""DNSHawk PySide6 application GUI."""

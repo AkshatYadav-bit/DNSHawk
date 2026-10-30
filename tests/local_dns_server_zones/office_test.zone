@@ -1,0 +1,19 @@
+$ORIGIN office.test.
+$TTL 3600
+
+@ IN SOA ns.office.test. admin.office.test. (
+    2026101304 ; Serial
+    3600     ; Refresh
+    600      ; Retry
+    86400    ; Expire
+    3600     ; Negative cache TTL
+)
+
+@  IN NS ns.office.test.
+ns IN A  192.168.111.1
+
+printer  IN A    192.168.111.25
+meeting  IN A    192.168.111.26
+storage  IN A    192.168.111.27
+backup   IN A    192.168.111.28
+voip     IN A    192.168.111.29

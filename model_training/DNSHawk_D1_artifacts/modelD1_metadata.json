@@ -1,0 +1,46 @@
+{
+  "model": "D1 Wildcard-Aware XGBoost",
+  "features": [
+    "query_count",
+    "unique_query_count",
+    "unique_query_ratio",
+    "queries_per_second",
+    "avg_query_length",
+    "max_query_length",
+    "entropy",
+    "avg_subdomain_length",
+    "max_subdomain_length",
+    "avg_subdomain_entropy",
+    "max_subdomain_entropy",
+    "unique_subdomain_count",
+    "unique_subdomain_ratio",
+    "mean_interarrival",
+    "std_interarrival",
+    "avg_packet_length",
+    "max_packet_length"
+  ],
+  "minimum_query_count": 10,
+  "window_seconds": 60,
+  "decision_threshold": 0.5,
+  "wildcard_training_captures": [
+    "wildcard/wildcard_00001_20231011215715.pcap",
+    "wildcard/wildcard_00002_20231011220330.pcap",
+    "wildcard/wildcard_00003_20231011220812.pcap",
+    "wildcard/wildcard_00004_20231011221109.pcap",
+    "wildcard/wildcard_00006_20231011221701.pcap",
+    "wildcard/wildcard_00007_20231011221737.pcap",
+    "wildcard/wildcard_00010_20231011222958.pcap",
+    "wildcard/wildcard_00012_20231011223819.pcap"
+  ],
+  "wildcard_final_test_captures": [
+    "wildcard/wildcard_00000_20231011215521.pcap",
+    "wildcard/wildcard_00005_20231011221350.pcap",
+    "wildcard/wildcard_00008_20231011222232.pcap",
+    "wildcard/wildcard_00009_20231011222825.pcap",
+    "wildcard/wildcard_00011_20231011223332.pcap"
+  ],
+  "training_rows": 3007,
+  "validation_rows": 540,
+  "final_test_rows": 1407,
+  "model_path": "/content/drive/MyDrive/DNS_Hawk/modelD1/models/xgboost_dns_tunnel_d1.json"
+}
